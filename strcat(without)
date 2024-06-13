@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<string.h> 
+   int main()
+   {
+     char str1[50],str2[50];
+       int i,j,r[50];
+       scanf("%s",str1);
+       scanf("%s",str2);
+       for(i=0;str1[i]!='\0';i++)
+      {
+          r[i]=str1[i];
+      }
+      for(j=i;str1[j-i];j++)
+      {
+          r[j]=str2[j-i];
+      }
+      printf("%s %s",str1,str2);
+      return 0;
+   }
