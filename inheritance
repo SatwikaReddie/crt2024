@@ -1,0 +1,49 @@
+class Test
+{
+    public static void main(String[] args)
+    {
+       Student s1=new Student();
+       s1.display();
+     //  s1.show();
+     Marks m1=new Marks();
+     m1.display();
+     m1.show();
+    }
+}
+class Student
+{
+    int admno=111;
+    String name="sss";
+    
+    void display()
+    {
+       System.out.println("--------------");
+       System.out.println("student Report");
+       System.out.println("--------------");
+    }
+}
+class Marks extends Student
+{
+    int mat=76,phy=85,che=67;
+    void show()
+    {
+        System.out.println("Admno="+admno);
+        System.out.println("Name="+name);
+        System.out.println("Maths="+mat);
+        System.out.println("Physics="+phy);
+        System.out.println("Chemistry="+che);
+    }
+}
+
+OUTPUT:
+--------------
+student Report
+--------------
+--------------
+student Report
+--------------
+Admno=111
+Name=sss
+Maths=76
+Physics=85
+Chemistry=67
